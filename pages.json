@@ -5,20 +5,14 @@
       "navigationBarTitleText": "登录"
     }
   }, {
-    "path": "pages/register",
-    "style": {
-      "navigationBarTitleText": "注册"
-    }
-  }, {
     "path": "pages/index",
     "style": {
-      "navigationBarTitleText": "若依移动端框架",
-      "navigationStyle": "custom"
+      "navigationBarTitleText": "文件列表"
     }
   }, {
-    "path": "pages/work/index",
+    "path": "pages/upload/index",
     "style": {
-      "navigationBarTitleText": "工作台"
+      "navigationBarTitleText": "选择照片"
     }
   }, {
     "path": "pages/mine/index",
@@ -70,6 +64,22 @@
     "style": {
       "navigationBarTitleText": "浏览文本"
     }
+  } ,{
+	"path" : "pages/operate/index",
+	"style" : {
+		"navigationBarTitleText": "模型操作",
+		"enablePullDownRefresh": false,
+		"app-plus":{
+			"titleNView":{
+			}
+		}
+	}        
+  },
+  {
+    "path": "pages/operate/model",
+    "style": {
+      "navigationBarTitleText": "查看模型"
+    }
   }],
   "tabBar": {
     "color": "#000000",
@@ -82,10 +92,10 @@
         "selectedIconPath": "static/images/tabbar/home_.png",
         "text": "首页"
       }, {
-        "pagePath": "pages/work/index",
-        "iconPath": "static/images/tabbar/work.png",
-        "selectedIconPath": "static/images/tabbar/work_.png",
-        "text": "工作台"
+        "pagePath": "pages/upload/index",
+        "iconPath": "static/images/tabbar/camera.png",
+        "selectedIconPath": "static/images/tabbar/camera_.png",
+        "text": "拍照"
       }, {
         "pagePath": "pages/mine/index",
         "iconPath": "static/images/tabbar/mine.png",

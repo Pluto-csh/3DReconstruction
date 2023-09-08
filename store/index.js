@@ -9,7 +9,15 @@ const store = new Vuex.Store({
   modules: {
     user
   },
-  getters
+  getters,
+  state: {
+    pathId:-1,
+  },
+  mutations:{
+    change(state,num) {
+      state.pathId = num;
+    }
+  }
 })
 
 export default store

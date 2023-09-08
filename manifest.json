@@ -1,6 +1,6 @@
 {
     "name" : "若依移动端",
-    "appid" : "__UNI__25A9D80",
+    "appid" : "__UNI__9379CF3",
     "description" : "",
     "versionName" : "1.1.0",
     "versionCode" : "100",
@@ -35,13 +35,17 @@
                     "<uses-permission android:name=\"android.permission.WRITE_SETTINGS\"/>"
                 ]
             },
-            "ios" : {},
-            "sdkConfigs" : {}
+            "ios" : {
+                "dSYMs" : false
+            },
+            "sdkConfigs" : {
+                "ad" : {}
+            }
         }
     },
     "quickapp" : {},
     "mp-weixin" : {
-        "appid" : "wxccd7e2a0911b3397",
+        "appid" : "wxc5e2a9849b51686c",
         "setting" : {
             "urlCheck" : false,
             "es6" : false,
@@ -58,7 +62,19 @@
         "template" : "static/index.html",
         "devServer" : {
             "port" : 9090,
-            "https" : false
+            "https" : false,
+            "disableHostCheck" : true,
+            "proxy" : {
+                "/api" : {
+                    "target" : "http://localhost:8080",
+                    "changeOrigin" : true,
+                    "secure" : false,
+                    "ws" : false,
+                    "pathRewrite" : {
+                        "^/api" : ""
+                    }
+                }
+            }
         },
         "title" : "RuoYi-App",
         "router" : {

@@ -30,5 +30,7 @@
 </script>
 
 <style lang="scss">
-  @import '@/static/scss/index.scss'
+	@import "@/uni_modules/uview-ui/index.scss";
+	@import '@/static/scss/index.scss';
 </style>
+
